@@ -61,7 +61,7 @@ class ListArray: public List<T>
         }
 
         //METODOS DE CLASE LIST
-        void insert )int pos, T e) override
+        void insert (int pos, T e) override
         {
             int i;
             if (pos<0 || pos>size())

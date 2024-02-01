@@ -5,25 +5,13 @@
 using namespace std;
 
 template <typename T>
-
 class ListArray: public List<T>
 {
     private:
         T* arr;
         int max, n;
         static const int MINSIZE=2;
-        void resize(int new_size)
-        {
-            int i;
-            T* aux = new int [new_size];
-            for(i=0; i<size(); i++)
-            {
-                aux[i]=arr[i];
-            }
-            delete [] arr;
-            arr=aux;
-            max=new_size;
-        }
+        void resize(int new_size);
 
     public:
         //METODOS DE LISTARRAY

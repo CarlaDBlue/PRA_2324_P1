@@ -34,7 +34,7 @@ class ListArray: public List<T>
             return arr[pos];
         }
 
-        friend ostream& operator<<(ostream &out, const Listarray<T> &list)
+        friend ostream& operator<<(ostream &out, const ListArray<T> &list)
         {
             int i;
             out << "List ->[";
@@ -49,12 +49,12 @@ class ListArray: public List<T>
         }
 
         //METODOS DE CLASE LIST
-        void insert (int pos, T e) override
+        void insert (int pos, T e) override     //override
         {
             int i;
             if (pos<0 || pos>size())
-                throw out_of_range("Posicion no valida.\n");
-            n++
+                throw out_of_range("Posicion no valida.\n");  //O runtime_error (para los throws)
+            n++;
             resize(n);
             if (pos<n)
             {
@@ -93,7 +93,7 @@ class ListArray: public List<T>
             aux=arr[pos];
             if (pos<n)
             {
-                for (i=pos; i<n; i++
+                for (i=pos; i<n; i++)
                 {
                     arr[i]=arr[i+1];
                 }

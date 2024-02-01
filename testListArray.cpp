@@ -4,7 +4,7 @@
 int main(){
     std::cout << std::boolalpha; // configuramos cout para mostrar true/false en lugar de 0/1.
 
-    ListArray<int> list;
+    ListArray<int> list;        //el <typename T> será un int. 
 
     std::cout << list << std::endl;
     std::cout << "size(): " << list.size() << std::endl;

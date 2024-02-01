@@ -11,9 +11,12 @@ class ListArray: public List<T>
 {
     private:
         T* arr;
-        int max, n;
+        int max, n;                 //max es el tamaño del vetor, n es el número de elementos del mismo. 
         static const int MINSIZE=2;
-        void resize(int new_size);
+        void resize(int new_size)
+        {
+            max = new_size;
+        }
 
     public:
         //METODOS DE LISTARRAY
